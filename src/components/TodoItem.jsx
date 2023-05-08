@@ -26,27 +26,28 @@ const TodoItem = ({ itemProp }) => {
 
   return (
     <li>
-      <div style={{ display: editing ? 'none' : 'block' }}>
+      <div className='todo' style={{ display: editing ? 'none' : 'flex' }}>
         <input
           type="checkbox"
           checked={itemProp.completed}
           onChange={() => handleChange(itemProp.id)}
         />
+         <span style={completedStyle}>
+          {itemProp.title}
+         </span>
         <button onClick={handleEditing}>
           <AiFillEdit style={{ color: '#5e5e5e', fontSize: '16px' }} />
         </button>
         <button onClick={() => deleteTodo(itemProp.id)}>
           <FaTrash style={{ color: '#5e5e5e', fontSize: '16px' }} />
         </button>
-        <span style={completedStyle}>
-          {itemProp.title}
-        </span>
+       
       </div>
-      <input
+      <input className='editInput'
         type="text"
         ref={editInput}
         defaultValue={itemProp.title}
-        style={{ display: editing ? 'block' : 'none' }}
+        style={{ display: editing ? 'flex' : 'none' }}
         onKeyDown={handleUpdated}
       />
     </li>
@@ -54,7 +55,7 @@ const TodoItem = ({ itemProp }) => {
 };
 
 TodoItem.propTypes = {
-  itemProp: PropTypes.obj.isRequired,
+  itemProp: PropTypes.object.isRequired,
 };
 
 

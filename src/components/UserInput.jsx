@@ -24,7 +24,7 @@ const UserInput = () => {
   return (
     <>
       <form onSubmit={handleForm}>
-        <input
+        <input className='user-input'
           type="text"
           placeholder="Add Todo..."
           value={title}
