@@ -38,7 +38,6 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   text-align: center;
-  /* padding-top: 1%; */
 }
 
 button {
@@ -46,7 +45,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: gold; 
+  background-color: gold;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -57,7 +56,7 @@ button:hover {
 
 button:focus,
 button:focus-visible {
-  outline: none; 
+  outline: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -85,10 +84,10 @@ button:focus-visible {
   flex-direction: column;
   align-items: center;
   gap: 1em;
-  margin:  0 auto;
+  margin: 0 auto;
   background-color: gold;
   box-shadow: 0 0 10px rgb(255, 2, 2);
-  padding: 2%; 
+  padding: 2%;
 }
 
 li {
@@ -116,9 +115,15 @@ li,
   border: none;
 }
 
+span,
+.editInput {
+  width: 100%;
+  height: auto;
+}
+
 .user-input:focus,
 .editInput:focus {
-  outline: none; 
+  outline: none;
 }
 
 .todo {
@@ -126,11 +131,5 @@ li,
   width: 100%;
   gap: 5%;
   align-items: center;
-  height: auto;
-}
-
-span,
-.editInput {
-  width: 100%;
   height: auto;
 }
