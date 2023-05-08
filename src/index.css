@@ -113,6 +113,12 @@ li,
   padding: 1%;
   background-color: gold;
   border: none;
+  font-size: 2em;
+  color: #213547; 
+}
+
+span {
+  font-size: 3em; 
 }
 
 span,
