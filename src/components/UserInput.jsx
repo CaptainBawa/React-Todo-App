@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useTodosContext } from './TodosContext';
 import { FaPlusCircle } from 'react-icons/fa';
+import { useTodosContext } from './TodosContext';
 
 const UserInput = () => {
   const [title, setTitle] = useState('');
@@ -24,13 +24,14 @@ const UserInput = () => {
   return (
     <>
       <form onSubmit={handleForm}>
-        <input className='user-input'
+        <input
+          className="user-input"
           type="text"
           placeholder="Add Todo..."
           value={title}
           onChange={handleChange}
         />
-        <button>
+        <button type="button">
           <FaPlusCircle
             style={{
               color: '#5e5e5e',

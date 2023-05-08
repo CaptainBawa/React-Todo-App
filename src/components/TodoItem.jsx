@@ -1,8 +1,8 @@
 import { useState, useRef } from 'react';
-import { useTodosContext } from './TodosContext';
 import { FaTrash } from 'react-icons/fa';
 import { AiFillEdit } from 'react-icons/ai';
 import PropTypes from 'prop-types';
+import { useTodosContext } from './TodosContext';
 
 const TodoItem = ({ itemProp }) => {
   const [editing, setEditing] = useState(false);
@@ -26,24 +26,25 @@ const TodoItem = ({ itemProp }) => {
 
   return (
     <li>
-      <div className='todo' style={{ display: editing ? 'none' : 'flex' }}>
+      <div className="todo" style={{ display: editing ? 'none' : 'flex' }}>
         <input
           type="checkbox"
           checked={itemProp.completed}
           onChange={() => handleChange(itemProp.id)}
         />
-         <span style={completedStyle}>
+        <span style={completedStyle}>
           {itemProp.title}
-         </span>
-        <button onClick={handleEditing}>
+        </span>
+        <button type="button" onClick={handleEditing}>
           <AiFillEdit style={{ color: '#5e5e5e', fontSize: '16px' }} />
         </button>
-        <button onClick={() => deleteTodo(itemProp.id)}>
+        <button type="button" onClick={() => deleteTodo(itemProp.id)}>
           <FaTrash style={{ color: '#5e5e5e', fontSize: '16px' }} />
         </button>
-       
+
       </div>
-      <input className='editInput'
+      <input
+        className="editInput"
         type="text"
         ref={editInput}
         defaultValue={itemProp.title}
@@ -55,8 +56,7 @@ const TodoItem = ({ itemProp }) => {
 };
 
 TodoItem.propTypes = {
-  itemProp: PropTypes.object.isRequired,
+  itemProp: PropTypes.func.isRequired,
 };
-
 
 export default TodoItem;
