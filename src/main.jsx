@@ -1,10 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+import AppLogic from './components/AppLogic';
+
+const domContainer = document.getElementById('root');
+const root = ReactDOM.createRoot(domContainer);
+root.render(
   <React.StrictMode>
-    <App />
+    <AppLogic />
   </React.StrictMode>,
-)
+);

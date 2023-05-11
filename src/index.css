@@ -1,3 +1,11 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -22,37 +30,33 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  border: none;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: gold;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: red;
 }
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -64,8 +68,74 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
+}
 
-  button {
-    background-color: #f9f9f9;
-  }
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f1f1f15c;
+  padding: 8% 0;
+}
+
+.todo-container {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin: 0 auto;
+  background-color: gold;
+  box-shadow: 0 0 10px rgb(255, 2, 2);
+  padding: 2%;
+}
+
+li {
+  list-style: none;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+
+ul,
+li,
+.user-input {
+  width: 100%;
+  height: auto;
+}
+
+.user-input,
+.editInput {
+  padding: 1%;
+  background-color: gold;
+  border: none;
+  font-size: 2em;
+  color: #213547; 
+}
+
+span {
+  font-size: 3em; 
+}
+
+span,
+.editInput {
+  width: 100%;
+  height: auto;
+}
+
+.user-input:focus,
+.editInput:focus {
+  outline: none;
+}
+
+.todo {
+  display: flex;
+  width: 100%;
+  gap: 5%;
+  align-items: center;
+  height: auto;
 }
