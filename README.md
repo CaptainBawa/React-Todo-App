@@ -29,9 +29,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [React To-Do List App] <a name="about-project"></a>
+# 📖 React To-Do List App <a name="about-project"></a>
 
-**[React_To_Do_List_App]** is a simple application built using the React.js library that allows users to add, edit, and delete tasks to a list. The app uses a single-page application (SPA) architecture and leverages React's state management capabilities to update the UI in real-time as users interact with the app. The To-Do List App also uses React's component-based architecture, allowing developers to build reusable UI components that can be easily composed and reused throughout the app. The app is typically built using modern JavaScript tools like Webpack and Babel, and can be deployed to a variety of hosting platforms. The App is a great example of how to build a modern, responsive, and scalable web application using the React.js library.
+**React To Do List App** is a simple application built using the React.js library that allows users to add, edit, and delete tasks to a list. The app uses a single-page application (SPA) architecture and leverages React's state management capabilities to update the UI in real-time as users interact with the app. The To-Do List App also uses React's component-based architecture, allowing developers to build reusable UI components that can be easily composed and reused throughout the app. The app is typically built using modern JavaScript tools like Webpack and Babel, and can be deployed to a variety of hosting platforms. The App is a great example of how to build a modern, responsive, and scalable web application using the React.js library.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -53,9 +53,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Add_Task]**
-- **[Edit_Task]**
-- **[Delete_Task]**
+- **Add Task**
+- **Edit Task**
+- **Delete Task**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,7 +92,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd my-project
+  cd React-Todo-App
   npm install/npm i
 ```
 
@@ -124,8 +124,8 @@ This project is deployed at github pages you can clone it here.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Make_Responsive]**
-- [ ] **[Fetch_Data_From_External_API]**
+- [ ] **Make It Responsive**
+- [ ] **Fetch Data From External API**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
